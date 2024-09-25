@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาสภาพอากาศ</title>
+    <link rel="stylesheet" href="stylesweb.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+</head>
+<body>
+    <h1>ค้นหาสภาพอากาศตามชื่อเมือง</h1>
+    <input type="text" id="cityInput" placeholder="กรอกชื่อเมือง" required>
+    <button onclick="redirectToWeatherPage()">ค้นหาสภาพอากาศ</button>
+
+    <script>
+        function redirectToWeatherPage() {
+            const city = document.getElementById('cityInput').value;
+            if (city) { // ตรวจสอบว่า input ไม่ว่าง
+                const apiKey = 'ba1a9d86f54f68ed70302420c7d542d7'
+                const url = `weather.html?city=${encodeURIComponent(city)}&apikey=${apiKey}`;
+                window.location.href = url; // เปลี่ยนไปยังหน้าใหม่
+            } else {
+                alert("กรอกชื่อเมือง"); // แจ้งเตือนหากไม่กรอกชื่อเมือง
+            }
+        }
+    </script>
+</body>
+</html>

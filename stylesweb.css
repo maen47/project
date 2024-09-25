@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* ฟอนต์หลัก */
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    background-color: #f0f8ff; /* สีพื้นหลัง */
+    color: #333; /* สีตัวอักษร */
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif; /* ฟอนต์หัวเรื่อง */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF; /* สีตัวอักษรหัวเรื่อง */
+    font-weight: 600; /* ปรับน้ำหนักตัวอักษร */
+}
+
+input {
+    padding: 12px; /* เพิ่ม padding สำหรับ input */
+    font-size: 16px;
+    margin: 10px;
+    border: 2px solid #007BFF; /* กรอบของ input */
+    border-radius: 8px; /* มุมโค้งของ input */
+    outline: none; /* ลบเส้นขอบที่ปรากฏเมื่อคลิก */
+    width: 320px; /* กำหนดความกว้าง */
+    transition: border-color 0.3s; /* เพิ่มการเปลี่ยนสีกรอบ */
+    font-family: 'Poppins', sans-serif; /* ฟอนต์สำหรับ input */
+}
+
+input:focus {
+    border-color: #0056b3; /* เปลี่ยนสีกรอบเมื่อมีการโฟกัส */
+}
+
+button {
+    padding: 12px 24px; /* ปรับ padding ของปุ่ม */
+    font-size: 16px;
+    margin: 10px;
+    border: none; /* ไม่มีกรอบ */
+    border-radius: 8px; /* มุมโค้งของปุ่ม */
+    background-color: #007BFF; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษรของปุ่ม */
+    cursor: pointer; /* เปลี่ยนรูปแบบเมาส์ */
+    transition: background-color 0.3s, transform 0.3s; /* เพิ่มการเปลี่ยนสีเมื่อ hover */
+    font-family: 'Chakra Petch', sans-serif; /* ฟอนต์สำหรับปุ่ม */
+}
+
+button:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อ hover */
+    transform: scale(1.05); /* เพิ่มขนาดเมื่อ hover */
+}
